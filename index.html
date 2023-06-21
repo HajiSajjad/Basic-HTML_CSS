@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <span style="display: flex; align-items: center; font-size: xx-large;">
+            Value is: &nbsp;
+            <p id="value"></p>
+            <p id="value."></p>
+            <p id="invalid"></p>
+        </span>
+
+        <script>
+            let num1 = 10, num2 = 20
+            if (num1 < num2 && num2 < num1) {
+                document.getElementById("value").innerHTML = "Result is True."
+            }
+            else if (num1 < num2 || num2 < num1) {
+                document.getElementById("value.").innerHTML = "Result is True.."
+            }
+            else {
+                document.getElementById("invalid").innerHTML = "Invalid"
+            }
+
+        </script>
+    </body>
+
+</html>
